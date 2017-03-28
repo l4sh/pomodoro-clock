@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro clock</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Knewave'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+    <div id="container">
+    <h1 class="pomodoro-title">Pomodoro clock</h1>
+    <div class="pomodoro">
+      <div class="config">
+        <div class="break">
+          <div class="title">Break length</div>
+          <div>
+            <button id="break-decrease">-</button>
+            <span id="break-length">0</span>
+            <button id="break-increase">+</button>
+          </div>
+        </div>
+        <div class="session">
+          <div class="title">Session length</div>
+          <div>
+            <button id="session-decrease">-</button>
+            <span id="session-length">0</span>
+            <button id="session-increase">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start">start</button>
+        <button id="reset">reset</button>
+      </div>
+      <div class="clock">
+        <div class="timer" id="timer">00:00</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="vertical">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="horizontal">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+  background-color: #111;
+  font-family: 'Knewave', cursive;
+  letter-spacing: 0.3em;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FC0DDC;
+  text-shadow: 0 0 10px #6828DE;
+  flex-direction: column;
+}
+
+.pomodoro-title {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.pomodoro .config {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.pomodoro .config > div {
+  display: inline-block;
+  text-align: center;
+  margin: 5px 30px;
+}
+
+.pomodoro .config button, #start, #reset {
+  background: transparent;
+  border: none;
+  font-family: 'Knewave', cursive;
+  color: #FC0DDC;
+  text-shadow: 0 0 10px #6828DE;
+}
+
+.controls, #start, #reset {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pomodoro .clock .timer {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.pomodoro {
+  background-color: transparent;
+  align-items: center;
+}
+
+.grid {
+  z-index: -1;
+  top: -100px;
+  bottom: -400px;
+  left: -400px;
+  right: -400px;
+  position: absolute;
+  background-image: linear-gradient(#6828DE 1px, transparent 2px), linear-gradient(90deg, #6828DE 1px, transparent 2px);
+  background-size: 3% 3%, 3% 3%;
+  background-position: 0 0, 0 0;
+  transform: perspective(300px) rotateX(80deg);
+}
